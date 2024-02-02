@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/create_event_dialog">
+
+    <EditText
+        android:id="@+id/event_name"
+        android:inputType="textShortMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/event_name"/>
+
+    <Button
+        android:id="@+id/dateView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/event_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rounded"
+        android:text="" />
+
+    <Button
+        android:id="@+id/timeView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/dateView"
+        android:background="@drawable/button_rounded"
+        android:text="" />
+
+</RelativeLayout>

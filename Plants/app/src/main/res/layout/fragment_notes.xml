@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="26dp"
+    android:layout_marginBottom="28dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/fragment_notes">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/notes_list"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_note_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top|start"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabCustomSize="56dp"
+        app:srcCompat="@drawable/ic_add_24dp" />
+
+</RelativeLayout>

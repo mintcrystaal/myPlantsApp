@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_myPlants"
+        android:icon="@drawable/ic_local_florist_black_24dp"
+        android:title="@string/my_plants_title" />
+
+    <item
+        android:id="@+id/navigation_allPlants"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="@string/all_plants_title" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:title="@string/calendar_title" />
+
+    <item
+        android:id="@+id/navigation_notes"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/notes_title" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings_title" />
+
+</menu>

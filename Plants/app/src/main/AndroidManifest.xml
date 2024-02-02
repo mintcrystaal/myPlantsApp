@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snail.plants">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="fullSensor"
+            android:name="com.snail.fragments.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:screenOrientation="fullSensor"
+            android:name="com.snail.views.NoteView"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:screenOrientation="fullSensor"
+            android:name="com.snail.views.PlantView"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:screenOrientation="fullSensor"
+            android:name="com.snail.views.MyPlantView"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:screenOrientation="fullSensor"
+            android:name="com.snail.dialogs.CreatePlantActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <receiver android:name="com.snail.fragments.CalendarFragment$MyBroadcastReceiverDate">
+            <intent-filter>
+                <action android:name="datePicked" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.snail.fragments.MyPlantsFragment$MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="plantAdded" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snail.processes.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver android:name="com.snail.fragments.AllPlantsFragment$MyBroadcastReceiverFilter">
+            <intent-filter>
+                <action android:name="filter"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

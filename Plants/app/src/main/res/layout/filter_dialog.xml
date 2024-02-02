@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/plant_temperature"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:text="@string/your_plant_temperature"/>
+
+
+    <Spinner
+        android:id="@+id/choose_temperature"
+        android:layout_toEndOf="@id/plant_temperature"
+        android:layout_below="@+id/plant_name"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/plant_watering"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/choose_temperature"
+        android:text="@string/your_plant_watering_inp"/>
+
+
+    <Spinner
+        android:id="@+id/choose_watering"
+        android:layout_toEndOf="@id/plant_watering"
+        android:layout_below="@+id/choose_temperature"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/plant_light"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/choose_watering"
+        android:text="@string/your_plant_light"/>
+
+
+    <Spinner
+        android:id="@+id/choose_light"
+        android:layout_toEndOf="@id/plant_light"
+        android:layout_below="@+id/choose_watering"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/order_by"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/choose_light"
+        android:text="@string/how_to_order"/>
+
+
+    <Spinner
+        android:id="@+id/choose_order"
+        android:layout_toEndOf="@id/order_by"
+        android:layout_below="@+id/choose_light"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+
+
+</RelativeLayout>

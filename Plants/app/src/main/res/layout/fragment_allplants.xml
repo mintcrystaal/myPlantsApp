@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="26dp"
+    android:layout_marginBottom="28dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/fragment_allplants">
+
+
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:srcCompat="@drawable/ic_tune_black_24dp" />
+
+    <SearchView
+        android:id="@+id/search_plant"
+        android:layout_width="match_parent"
+        android:layout_toStartOf="@+id/filter"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_plant"
+        android:id="@+id/allplants_list"
+        />
+
+
+</RelativeLayout>

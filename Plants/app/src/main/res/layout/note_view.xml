@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/note_name"
+            android:inputType="textShortMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:hint="@string/note_name"
+            />
+
+        <EditText
+            android:id="@+id/note_text"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_name"
+
+            android:hint="@string/note_text"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/ok_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_text"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/cancel_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_text"
+            android:layout_toEndOf="@+id/ok_note"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/cancel" />
+
+    </RelativeLayout>
+</ScrollView>

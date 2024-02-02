@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#87993A</color>
+    <color name="colorPrimaryDark">#5E7300</color>
+    <color name="colorAccent">#382615</color>
+    <color name="button">#F8D473</color>
+    <color name="text">#F5E6CB</color>
+    <color name="calendar_background">#526500</color>
+    <color name="calendar_text">#FAFFE6</color>
+    <color name="current_day_bg">#7F8E3C</color>
+    <color name="selected_day_bg">#B6D91A	</color>
+    <color name="fertilize_day">#544003</color>
+    <color name="watering_day">#41BBA0	</color>
+    <color name="other_day">#EFBC3A</color>
+    <color name = "pay_attention">#b5a60505</color>
+    <color name = "feels_ok">#c43cb12f</color>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/plant_view_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/your_plant_pic"
+            android:cropToPadding="true"
+            android:maxWidth="350dp"
+            android:maxHeight="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_question" />
+
+        <TextView
+            android:id="@+id/plant_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.87"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/plant_view_image"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_temperature_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/your_plant_temperature"
+            android:layout_below="@+id/plant_view_name"/>
+
+        <TextView
+            android:id="@+id/plant_view_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@+id/plant_view_temperature_text"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_light_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/your_plant_light"
+            android:layout_below="@+id/plant_view_temperature"/>
+
+        <TextView
+            android:id="@+id/plant_view_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@+id/plant_view_light_text"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_watering_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/plant_view_light"
+            android:text="@string/your_plant_watering"/>
+
+
+        <TextView
+            android:id="@+id/plant_view_watering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@+id/plant_view_watering_text"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_fertilize_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/plant_view_watering"
+            android:text="@string/your_plant_fertilize"/>
+
+        <TextView
+            android:id="@+id/plant_view_fertilize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@+id/plant_view_fertilize_text"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_humidity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/plant_view_fertilize"
+            android:text="@string/your_plant_humidity"/>
+
+        <TextView
+            android:id="@+id/plant_view_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@+id/plant_view_humidity_text"/>
+
+        <TextView
+            android:id="@+id/plant_view_mine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/plant_view_humidity"
+            android:text="@string/your_plant_amount"/>
+
+        <TextView
+            android:id="@+id/plant_view_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plant_view_mine_text"
+            android:textSize="22sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/plant_view_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/plant_view_mine"
+            android:text="@string/your_plant_info"/>
+
+        <TextView
+            android:id="@+id/plant_view_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plant_view_info_text"
+            android:textSize="22sp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/plant_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plant_view_info"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/back" />
+
+    </RelativeLayout>
+</ScrollView>
